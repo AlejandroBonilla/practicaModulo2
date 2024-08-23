@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .section-header{
+            background-color: #188753;
+            color:#fff;
+            padding:15px;
+            border-radius: 5px;
+        }
+
+        h1 ,h2, h5{
+            font-family: "Pangolin", cursive;
+        }
+
+
+        footer{
+            height: 100px;
+        }
+        .justify{
+            text-align: justify;
+        }
+
+        .hidden{
+            visibility: hidden;
+        }
+        
+    </style>
+    </head>
+
+<body class="bg-body-tertiary">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Luigi's web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuevos Juegos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Header-->
+    <header class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-1 text-center text-success">Bienvenido a la Luigi web</h1>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <img src="assets/img/Luigi.png" class="img-fluid" alt="Imagen Luigi">
+            </div>
+        </div>
+    </header>
+    <!--section 1-->
+    <section class="container">
+        <h2 class="section-header">Luigi Mansion 3</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 p-5">
+                <img src="assets/img/luigi_mansion.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quaerat repellat nobis? Beatae tempore ratione minima quo neque in magnam veniam aliquid aspernatur accusantium aliquam voluptas, eum nam provident cupiditate.
+                Hic dolor maiores officiis eum aspernatur, aut tempora in quo sunt necessitatibus rem deleniti tempore, debitis, iure est sint laudantium eos quidem odio iusto sapiente reiciendis distinctio nostrum! Debitis, id!
+                Molestias velit tempore quis. Assumenda dicta iusto eligendi quas repellendus magni? Omnis totam, iure ducimus quae, dolorum pariatur minima minus tenetur nihil, ratione veritatis. Voluptatum modi eos veniam totam magnam!</p>
+            </div>
+        </div>
+    </section>
+    <!--section Cards-->
+    <section class="container">
+        <h2 class="section-header">También encuentra a Luigi en:</h2>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 col-lg-4">
+                <!--card-->
+                <div class="card mx-auto my-2" style="width: 18rem;">
+                    <img src="assets/img/mario_golf.jpeg" class="card-img-top" alt="Mario Golf">
+                    <div class="card-body">
+                      <h5 class="card-title">Mario Golf</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-warning text-light">ver mas</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <!--card-->
+                <div class="card mx-auto mb-2" style="width: 18rem;">
+                    <img src="assets/img/mario_strikers.jpeg" class="card-img-top" alt="Mario Striker">
+                    <div class="card-body">
+                      <h5 class="card-title">Mario Strikers</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-warning text-light">ver mas</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ">
+                <!--card-->
+                <div class="card mx-auto mb-2" style="width: 18rem;">
+                    <img src="assets/img/Mario_tennis_gamecube.png" class="card-img-top" alt="Mario Tennis">
+                    <div class="card-body">
+                      <h5 class="card-title">Mario Tennis</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-warning text-light">ver mas</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!--Form-->
+    <section class="container-fluid bg-success-subtle">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-6 p-5">
+                <h2 class="text-center">Subscribete al boletín mensual</h2>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Ingrese correo:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">No compartiremos tu información con terceros</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar Correo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="bg-success d-flex justify-content-center align-items-center">
+        <p>
+            <a class="text-light" href="#">www.nintendo.com</a>
+        </p>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+window.addEventListener("scroll", async () => {
+    const { scrollTop } = document.documentElement;
+    const anchor = document.querySelector(".navbar-brand");
+    if (scrollTop >= 60) {
+        //alert(baje 100px debo ocultar <a>)
+           // alert("aca")
+           anchor.classList.add("hidden")
+    }
+    else{
+        anchor.classList.remove("hidden")
+    }
+    
+});
+    </script>
+</body>
+
+</html>
